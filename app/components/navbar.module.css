@@ -1,0 +1,152 @@
+.navbar {
+  width: 100%;
+  background-color: #1e5a7d;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  z-index: 30;
+}
+
+.logo {
+  height: 4rem;
+  width: auto;
+}
+
+/* Desktop Navigation */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  color: white;
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.link:hover {
+  color: #5fcde4;
+  border-bottom-color: #5fcde4;
+}
+
+/* Mobile Menu Button */
+.menuButton {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 60;
+}
+
+.menuBar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+
+.menuButton.open .menuBar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menuButton.open .menuBar:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButton.open .menuBar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background-color: #1e5a7d;
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 50;
+  padding: 5rem 2rem 2rem;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebarLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebarLink {
+  color: white;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s;
+  padding: 0.75rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.sidebarLink:hover {
+  color: #5fcde4;
+  border-bottom-color: #5fcde4;
+}
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+}

@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  background-image: url(../../../public/mundo-background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+
+.blurContainer {
+  background: rgba(255, 255, 255, 0.645);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 56rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .main {
+    padding: 2.5rem 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding: 4rem 2rem;
+  }
+}
+
+
+.filterGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.select {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid #d1d5db;
+  color: #4b5563;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  min-width: 220px;
+}
+
+.select:hover {
+  border-color: #9ca3af;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.searchButton {
+  padding: 0.8rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.searchButtonActive {
+  background-color: #2563eb;
+  color: white;
+}
+
+.searchButtonDisabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.descriptionText{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #374151;
+}
+
+.statusContainer {
+  min-height: 24px;
+  text-align: center;
+}
+
+.statusText {
+  font-size: 1rem;
+  color: #374151;
+}
+
+.statusTextBold {
+  font-weight: bold;
+}
+
+.warningText {
+  color: #ca8a04;
+  font-weight: 500;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .statsContainer {
+    flex-direction: row;
+  }
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iconCircle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconCircleRed {
+  background-color: #ef4444;
+}
+
+.iconCircleBlack {
+  background-color: #000000;
+}
+
+.icon {
+  color: white;
+}
+
+.iconBell {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.iconCross {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.statLabel {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.statValue {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #111827;
+}
