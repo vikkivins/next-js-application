@@ -107,8 +107,7 @@ Após o envio:
 
 ## 🧪 Tecnologias Utilizadas
 
-* **Next.js** (App Router)
-* **React**
+* **Next.js**
 * **TypeScript**
 * **CSS Modules**
 * **API pública COVID-19 Brazil**
@@ -137,7 +136,7 @@ http://localhost:3000
 
 Este projeto colaborou para o meu aprendizado de Next.js e React. Partindo do zero e assistindo algumas aulas pelo [Youtube](https://www.youtube.com/playlist?list=PLC3y8-rFHvwhIEc4I4YsRz5C7GOBnxSJY), além de tirar dúvidas com IAs, percebi uma grande evolução ao longo de 2 dias de desenvolvimento. Os pontos principais foram:
 
-* Aprendizado e aplicação do Next.js + React do zero
+* Aprendizado e aplicação do Next.js do zero
 * Organização de código baseada em boas práticas e arquitetura limpa
 * Integração com APIs externas
 * Criação de fluxos completos de consulta e envio de dados
